@@ -327,7 +327,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "ad8e32cd-fc6b-4d2c-994a-1de6e0a8233f"
+						"spark.autotune.trackingId": "c4ffa56b-8cbf-46a6-985d-cbc16cc99d9b"
 					}
 				},
 				"metadata": {
@@ -372,7 +372,7 @@
 							"## If header exists uncomment line below\r\n",
 							"header=True\r\n",
 							")\r\n",
-							"##display(df.limit(10))\r\n",
+							"display(df.limit(10))\r\n",
 							"df_counts=df.groupBy(\"Category\").count()\r\n",
 							"display(df_counts)"
 						],
