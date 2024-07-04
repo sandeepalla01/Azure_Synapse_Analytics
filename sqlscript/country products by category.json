@@ -1,0 +1,17 @@
+{
+	"name": "country products by category",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT\n    Category, COUNT(*) AS ProductCount\nFROM\n    OPENROWSET(\n        BULK 'https://adlsgen2sy.dfs.core.windows.net/adls/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW = TRUE\n    ) AS [result]\nGROUP BY Category;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
